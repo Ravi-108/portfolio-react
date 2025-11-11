@@ -1,0 +1,113 @@
+.projects {
+  padding: 120px 20px;
+  min-height: 100vh;
+  text-align: center;
+  background: linear-gradient(135deg, #0E0F1A, #12131f);
+  color: #ffffff;
+}
+
+.section-title {
+  font-size: 2.8rem;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.section-title span {
+  background: linear-gradient(90deg, #ff8a00, #ff2e63);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Swiper Container */
+.project-slider {
+  width: 85%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ---- Card Styling ---- */
+.project-card {
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(12px);
+  border-radius: 18px;
+  overflow: hidden;
+  width: 360px;         /* Increased Width */
+  height: 480px;        /* Increased Height */
+  transition: transform 0.45s ease, box-shadow 0.45s ease;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 22px 45px rgba(255, 82, 129, 0.35);
+}
+
+/* ---- Card Image ---- */
+.project-card img {
+  width: 100%;
+  height: 260px;        /* Increased Image Height */
+  object-fit: cover;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* ---- Card Text ---- */
+.project-info {
+  padding: 22px;
+}
+
+.project-info h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.project-info p {
+  font-size: 1.05rem;
+  color: #d1d5db;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+/* ---- Button / Link ---- */
+.project-info a {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: 0.3s ease;
+  background: linear-gradient(90deg, #ff8a00, #ff2e63);
+  color: #ffffff;
+}
+
+.project-info a:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 12px rgba(255, 82, 129, 0.55);
+}
+
+/* ---- Center-Focus Slide Animation ---- */
+.swiper-slide {
+  transition: transform 0.45s ease, opacity 0.45s ease;
+  opacity: 0.6;
+}
+
+.swiper-slide-active {
+  transform: scale(1.10); /* Center card enlarged */
+  opacity: 1;
+  z-index: 2;
+}
+
+.swiper-slide-prev,
+.swiper-slide-next {
+  transform: scale(0.94); /* Side cards smaller */
+  opacity: 0.85;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .section-title { font-size: 2.1rem; }
+  .project-card { width: 260px; height: 420px; }
+  .project-card img { height: 220px; }
+}

@@ -1,0 +1,19 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
+  background-color: #423a3a;
+  color: #fff;
+  font-family: outfit, sans-serif;
+
+}
+html {
+  scroll-behavior: smooth;
+}
+section {
+  opacity: 0.99; /* removes sharp pops during animation */
+}
