@@ -46,9 +46,10 @@ const Hero = () => {
           GitHub
         </a>
 
-        <a href="/Ravi_Resume.pdf" download className="btn outline-btn">
-          Resume
-        </a>
+       <a href="/Ravi_Resume.pdf" download="Ravi_Rai_Resume.pdf" className="btn outline-btn">
+  Resume
+</a>
+
       </motion.div>
 
     </section>
