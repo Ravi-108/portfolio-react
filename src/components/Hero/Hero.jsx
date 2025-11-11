@@ -45,10 +45,14 @@ const Hero = () => {
         <a href="https://github.com/Ravi-108" target="_blank" rel="noopener noreferrer" className="btn secondary-btn">
           GitHub
         </a>
-
-       <a href="/Ravi_Resume.pdf" download="Ravi_Rai_Resume.pdf" className="btn outline-btn">
+         <a
+  href={`${import.meta.env.BASE_URL}Ravi_Resume.pdf`}
+  download="Ravi_Rai_Resume.pdf"
+  className="btn outline-btn"
+>
   Resume
 </a>
+
 
       </motion.div>
 
